@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/common/Sidebar";
 import BottomNav from "./components/common/BottomNav";
 import StaffHomePage from "./pages/staffPages/StaffHomePage";
-import AppRoutes from "./routes/AppRoutes";
+import UserRoutes from "./routes/UserRoutes";
+import TopNav from "./components/common/TopNav";
 
 export function App() {
   const [activeMenuItem, setActiveMenuItem] = useState("Dashboard");
@@ -15,8 +16,11 @@ export function App() {
   return (
     <div className="flex h-screen overflow-hidden">
       {
-        
+
       }
+      <TopNav className="md:hidden flex-shrink-0"
+        activeMenuItem={activeMenuItem}
+        handleMenuItemClick={handleMenuItemClick}/>
       <Sidebar
         className="hidden md:flex flex-shrink-0"
         activeMenuItem={activeMenuItem}
@@ -24,8 +28,13 @@ export function App() {
       />
 
       {/* Main content area */}
-      <div className="flex-1 overflow-y-auto">
+
+      {/* <div className="flex-1 overflow-y-auto">
         <AppRoutes></AppRoutes>
+      </div> */}
+
+      <div className="flex-1 overflow-y-auto">
+        <UserRoutes></UserRoutes>
       </div>
 
       {/* BottomNav: Hidden on medium and up, visible on small screens */}

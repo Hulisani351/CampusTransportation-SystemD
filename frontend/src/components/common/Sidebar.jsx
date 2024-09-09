@@ -5,6 +5,7 @@ import {
   faHome,
   faChartLine,
   faClipboardCheck,
+  faBell,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = ({ activeMenuItem, handleMenuItemClick }) => {
@@ -16,7 +17,7 @@ const Sidebar = ({ activeMenuItem, handleMenuItemClick }) => {
         {activeMenuItem}
       </div>
       <Link
-        to="/staffhome"
+        to="/"
         className={`flex items-center justify-start px-4 py-3 ${
           activeMenuItem === "Home"
             ? "bg-gray-700 text-gray-200 font-bold text-sm rounded-lg"
@@ -28,7 +29,7 @@ const Sidebar = ({ activeMenuItem, handleMenuItemClick }) => {
         Home
       </Link>
       <Link
-        to="/staffanalytics"
+        to="/UserService"
         className={`flex items-center justify-start px-4 py-3 ${
           activeMenuItem === "Analytics"
             ? "bg-gray-700 text-gray-200 font-bold text-sm rounded-lg"
@@ -50,6 +51,18 @@ const Sidebar = ({ activeMenuItem, handleMenuItemClick }) => {
       >
         <FontAwesomeIcon icon={faClipboardCheck} className="mr-2" />
         Tasks
+      </Link>
+      <Link
+        to="/Stafftasks"
+        className={`flex items-center justify-start px-4 py-3 ${
+          activeMenuItem === "Notification"
+            ? "bg-gray-700 text-gray-200 font-bold text-sm rounded-lg"
+            : "text-gray-700 font-bold text-sm"
+        }`}
+        onClick={() => handleMenuItemClick("Notification")}
+      >
+        <FontAwesomeIcon icon={faBell}  className="mr-2" />
+        Notification
       </Link>
 
       {/* Logout Button */}

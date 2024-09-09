@@ -11,7 +11,7 @@ const BottomNav = ({ activeMenuItem, handleMenuItemClick }) => {
   return (
     <nav className="bg-white text-white flex justify-around p-4 fixed bottom-0 w-full lg:hidden">
       <Link
-        to="/staffhome"
+        to="/"
         onClick={() => handleMenuItemClick("Home")}
         className={`flex flex-col items-center ${
           activeMenuItem === "Home" ? "text-black" : "text-gray-300"
@@ -21,7 +21,7 @@ const BottomNav = ({ activeMenuItem, handleMenuItemClick }) => {
         <span className="text-xs">Home</span>
       </Link>
       <Link
-        to="/staffanalytics"
+        to="/UserService"
         onClick={() => handleMenuItemClick("Analytics")}
         className={`flex flex-col items-center ${
           activeMenuItem === "Analytics" ? "text-black" : "text-gray-300"
