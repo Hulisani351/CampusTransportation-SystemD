@@ -14,7 +14,9 @@ export function App() {
 
   return (
     <div className="flex h-screen overflow-hidden">
-      {/* Sidebar: Hidden on small screens, visible on medium and up */}
+      {
+        
+      }
       <Sidebar
         className="hidden md:flex flex-shrink-0"
         activeMenuItem={activeMenuItem}
