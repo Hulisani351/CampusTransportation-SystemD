@@ -9,7 +9,7 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC2nlpW987Dn41oo1VsuRUHC5e_ZRSecJk",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "campus-transport.firebaseapp.com",
   databaseURL: "https://campus-transport-default-rtdb.firebaseio.com",
   projectId: "campus-transport",
