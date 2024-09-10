@@ -11,7 +11,7 @@ function UserService() {
     <main className='user-service-container'>
       <section className='header-section'>
 
-        <section className="header-title title-main w-full">
+        <section className="header-title title-main w-full pl-2 pt-2 ">
             Go Anywhere!
         </section>
         <section className='card-group'>
@@ -41,7 +41,7 @@ function UserService() {
 
       <section className='actions-section'>
         <section className='actions-title'>
-          <h2 className='title-main'>Get anything done with a click!</h2>
+          <h2 className='title-main pl-2'>Get anything done with a click!</h2>
         </section>
         <section className='actions-group'>
           <Card className="action-card">

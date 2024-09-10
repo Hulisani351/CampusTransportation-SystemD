@@ -1,7 +1,7 @@
 // components/Card.js
 import React from "react";
 
-const Card = ({ children, className }) => {
+const Card = ({ children, className ,onclick}) => {
   return (
     <div className={`bg-white p-4 rounded-lg shadow-md ${className}`}>
       {children}

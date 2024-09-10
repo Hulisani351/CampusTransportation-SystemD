@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserHome from "../pages/UserPages/UserHome";
 import UserService from "../pages/UserPages/UserService";
+import Find from "../pages/UserPages/Find";
 
 
 function UserRoutes() {
@@ -8,6 +9,7 @@ function UserRoutes() {
     <Routes>
       <Route path="/" element={<UserHome/>} />
       <Route path="/userService" element={<UserService/>} />
+      <Route path="/userFind" element={<Find/>} />
     </Routes>
   );
 }

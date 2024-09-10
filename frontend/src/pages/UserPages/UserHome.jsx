@@ -1,33 +1,38 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from '../../components/Card';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruck, faLocationDot, faRoute, faBicycle, faClipboardList, faMap } from '@fortawesome/free-solid-svg-icons';
 import './UserHome.css'; // Import custom CSS
 
 function UserHome() {
+
+
   return (
     <main className='main-container'>
       <section className='upper-part'>
         <section className='w-1/2'>
-          <Card className="card upper-card">
-            <section className='card-content'>
-              <span className='card-title'>Rent</span>
-            </section>
-            <section className='card-icon'>
-              <FontAwesomeIcon icon={faTruck} className='icon' />
-            </section>
-          </Card>
+              <Card className="card upper-card" >
+                <section className='card-content'>
+                  <span className='card-title'>Rent</span>
+                </section>
+                <section className='card-icon'>
+                  <FontAwesomeIcon icon={faTruck} className='icon' />
+                </section>
+              </Card>
         </section>
        
         <section className="w-1/2">
-          <Card className="card upper-card">
-            <section className='card-content'>
-              <span className='card-title'>Find</span>
-            </section>
-            <section className='card-icon'>
-              <FontAwesomeIcon icon={faLocationDot} className='icon' />
-            </section>
-          </Card>
+          <Link to='/userFind'>
+            <Card className="card upper-card">
+              <section className='card-content'>
+                <span className='card-title'>Find</span>
+              </section>
+              <section className='card-icon'>
+                <FontAwesomeIcon icon={faLocationDot} className='icon' />
+              </section>
+            </Card>
+          </Link>
         </section>
         
       </section>
