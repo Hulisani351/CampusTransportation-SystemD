@@ -37,15 +37,17 @@ function UserHome() {
         
       </section>
 
-      <section className='middle-apart'>
-        <Card className="middle-card w-full">
-          <section className="card-description">
-           <p >Navigate Wits, Your Way!</p>
-          </section>
-          <section className='card-icon'>
-            <FontAwesomeIcon icon={faRoute} className='icon' />
-          </section>
-        </Card>
+      <section className='middle-apart pl-1 pr-4'>
+        <Link to={'/UserFind'} className='w-full'>
+          <Card className="middle-card w-full">
+            <section className="card-description">
+            <p >Navigate Wits, Your Way!</p>
+            </section>
+            <section className='card-icon'>
+              <FontAwesomeIcon icon={faRoute} className='icon' />
+            </section>
+          </Card>
+        </Link>
       </section>
 
       <section className='lower-part '>

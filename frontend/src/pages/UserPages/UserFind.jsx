@@ -9,13 +9,13 @@ function Find() {
     <main className='find-main-container'>
 
         <section className='find-upper-part'>
-            <section className= 'find-Map find-w-1/2'>
+            <section className= 'find-Map w-full h-full text-center'>
                 The Map
             </section>
         </section>
 
         <section className='find-lower-part'>
-            <section className='find-w-full p-2'>
+            <section className='find w-full pt-5  '>
                 <h2 className='find-card-title find-title'>Select Location</h2>
             </section>               
             <section className='find-upper-section find-w-full find-flex find-justify-around'>
